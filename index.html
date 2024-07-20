@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>CodePen - JavaScript - Audio Visualization</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Nova+Mono&amp;display=swap'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'><link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-    <div class="container">
-        <h1>To-Do List</h1>
-        <input type="text" id="taskInput" placeholder="Добавьте новую задачу">
-        <button id="addTaskBtn">Добавить</button>
-        <ul id="taskList"></ul>
-    </div>
-    <script src="script.js"></script>
+<!-- partial:index.partial.html -->
+<p>click or drag</p>
+<div dropzone>
+  <span class="material-icons">add</span>
+  <input type="file" accept="audio/*">
+</div>
+<canvas></canvas>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
 </body>
 </html>
