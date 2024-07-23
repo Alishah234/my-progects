@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - JavaScript - Audio Visualization</title>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Nova+Mono&amp;display=swap'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'><link rel="stylesheet" href="./style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyclone Wallet Test</title>
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<p>click or drag</p>
-<div dropzone>
-  <span class="material-icons">add</span>
-  <input type="file" accept="audio/*">
-</div>
-<canvas></canvas>
-<!-- partial -->
-  <script  src="./script.js"></script>
+    <h1>Welcome to Cyclone Wallet!</h1>
+    <p>This is a test paragraph.</p>
+    <button onclick="testFunction()">Click me</button>
+    <p id="testResult"></p>
 
+    <script>
+        function testFunction() {
+            document.getElementById("testResult").innerText = "Button clicked!";
+        }
+    </script>
 </body>
 </html>
