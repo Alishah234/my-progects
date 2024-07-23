@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Crypto Wallet API</title>
+</head>
+<body>
+  <div class="crypto-data">Sample Crypto Data: Bitcoin Price is $30,000</div>
+  <script>
+    // Для тестирования отправки сообщений от content_script
+    document.addEventListener('DOMContentLoaded', () => {
+      const message = {
+        type: 'FETCH_DATA',
+        data: 'Sample Crypto Data: Bitcoin Price is $30,000'
+      };
+      chrome.runtime.sendMessage(message);
+    });
+  </script>
+</body>
+</html>
